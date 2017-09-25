@@ -45,5 +45,6 @@
 	<modules>
 		<module>01SimpleProject</module>
 		<module>01SimpleProjectkt</module>
+		<module>02SchedulingTasks</module>
 	</modules>
 </project>
