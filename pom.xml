@@ -48,5 +48,6 @@
 		<module>02SchedulingTasks</module>
 		<module>02SchedulingTaskskt</module>
 		<module>03RestfulWebService</module>
+		<module>03RestfulWebServicekt</module>
 	</modules>
 </project>
