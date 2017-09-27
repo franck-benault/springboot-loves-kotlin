@@ -16,7 +16,19 @@ public class ScheduledTasks {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
     @Scheduled(fixedRate = 5000)
-    public void reportCurrentTime() {
-        log.info("The time is now {}", dateFormat.format(new Date()));
+    public void scheduleFixedRate() {
+        log.info("Fixed rate task - {}", dateFormat.format(new Date()));
     }
+    
+    @Scheduled(fixedDelay = 1000)
+    public void scheduleFixedDelayTask() {
+    	log.info("Fixed delay task - {}",System.currentTimeMillis() / 1000);
+    }
+    
+    @Scheduled(cron = "0 * * * * ? ")
+    public void scheduleTaskUsingCronExpression() {
+      
+    	log.info("Cron expression {}",System.currentTimeMillis() / 1000);
+    }
+
 }
