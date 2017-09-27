@@ -47,6 +47,6 @@
 		<module>01SimpleProjectkt</module>
 		<module>02SchedulingTasks</module>
 		<module>02SchedulingTaskskt</module>
-		<module>03RestfullWebService</module>
+		<module>03RestfulWebService</module>
 	</modules>
 </project>
