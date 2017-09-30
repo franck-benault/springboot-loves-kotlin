@@ -49,5 +49,7 @@
 		<module>02SchedulingTaskskt</module>
 		<module>03RestfulWebService</module>
 		<module>03RestfulWebServicekt</module>
+		<module>04JdbcAccess</module>
+		<module>04JdbcAccesskt</module>
 	</modules>
 </project>
