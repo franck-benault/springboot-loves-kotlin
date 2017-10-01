@@ -51,5 +51,7 @@
 		<module>03RestfulWebServicekt</module>
 		<module>04JdbcAccess</module>
 		<module>04JdbcAccesskt</module>
+		<module>05UploadingFile</module>
+		<module>05UploadingFilekt</module>
 	</modules>
 </project>
