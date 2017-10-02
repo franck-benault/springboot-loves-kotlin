@@ -53,5 +53,7 @@
 		<module>04JdbcAccesskt</module>
 		<module>05UploadingFile</module>
 		<module>05UploadingFilekt</module>
+		<module>06Qualifier</module>
+		<module>06Qualifierkt</module>
 	</modules>
 </project>
