@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@Qualifier(value="IOS")
+@Qualifier("IOS")
 public class AppleMarketPlace implements MarketPlace {
 	
     @Override
