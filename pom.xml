@@ -55,5 +55,7 @@
 		<module>05UploadingFilekt</module>
 		<module>06Qualifier</module>
 		<module>06Qualifierkt</module>
+		<module>07ValidationInput</module>
+		<module>07ValidationInputkt</module>
 	</modules>
 </project>
