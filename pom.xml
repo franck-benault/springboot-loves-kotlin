@@ -57,5 +57,7 @@
 		<module>06Qualifierkt</module>
 		<module>07ValidationInput</module>
 		<module>07ValidationInputkt</module>
+		<module>08JPA</module>
+		<module>08JPAkt</module>
 	</modules>
 </project>
