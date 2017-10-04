@@ -59,5 +59,7 @@
 		<module>07ValidationInputkt</module>
 		<module>08JPA</module>
 		<module>08JPAkt</module>
+		<module>09EndPointsActuator</module>
+		<module>09EndPointsActuatorkt</module>
 	</modules>
 </project>
