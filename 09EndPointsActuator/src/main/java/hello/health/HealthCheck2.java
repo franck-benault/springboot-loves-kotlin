@@ -19,7 +19,7 @@ public class HealthCheck2 implements HealthIndicator {
         return Health.up().withDetail("Low value", errorCode).build();
     }
      
-    public int check() {
+    private int check() {
         // Your logic to check health
     	Random rand = new Random(); 
     	return rand.nextInt(10); 
