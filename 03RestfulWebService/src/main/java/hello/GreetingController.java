@@ -7,13 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class GreetingController {
+	
+    private final GreetingService service;
+    
+    public GreetingController(GreetingService service) {
+        this.service = service;
+    }
 
-    private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+                            String.format(service.greetTemplate(), name));
     }
 }
