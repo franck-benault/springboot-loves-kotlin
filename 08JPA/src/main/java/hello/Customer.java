@@ -21,7 +21,24 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    @Override
+    
+    
+    public Long getId() {
+		return id;
+	}
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+	@Override
     public String toString() {
         return String.format(
                 "Customer[id=%d, firstName='%s', lastName='%s']",
