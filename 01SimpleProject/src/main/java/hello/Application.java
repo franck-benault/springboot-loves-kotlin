@@ -10,5 +10,6 @@ public class Application {
     public static void main(String[] args) throws Exception {
     	System.out.println("Starting springboot application");
         SpringApplication.run(Application.class);
+        System.err.println("end main");
     }
 }
