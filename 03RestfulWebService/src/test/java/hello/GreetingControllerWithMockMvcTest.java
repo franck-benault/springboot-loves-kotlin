@@ -1,12 +1,11 @@
 package hello;
 
 import static org.mockito.Mockito.when;
-import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import static net.javacrumbs.jsonunit.spring.JsonUnitResultMatchers.json;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,7 +30,7 @@ public class GreetingControllerWithMockMvcTest {
 	public void testGreetingNoName() throws Exception {
         when(service.greetTemplate()).thenReturn("Hello, %s!");
 		this.mockMvc.perform(get("/greeting")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, World!")));
+			.andExpect(json().node("content").isEqualTo("Hello, World!"));
 	}
 
 	
@@ -39,7 +38,7 @@ public class GreetingControllerWithMockMvcTest {
 	public void testGreetingWithName() throws Exception {
         when(service.greetTemplate()).thenReturn("Hello, %s!");
 		this.mockMvc.perform(get("/greeting?name=toto")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, toto!")));
+				.andExpect(json().node("content").isEqualTo("Hello, toto!"));
 	}
 
 }
