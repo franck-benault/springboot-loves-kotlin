@@ -7,12 +7,13 @@
 		<version>0.1.0</version>
 	</parent>
 	<artifactId>09EndPointsActuator</artifactId>
-	   <properties>
+	<properties>
 		<kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<kotlin.version>1.1.4-3</kotlin.version>
+		<jsonunit.version>1.25.0</jsonunit.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -23,10 +24,22 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.javacrumbs.json-unit</groupId>
+			<artifactId>json-unit</artifactId>
+			<version>${jsonunit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.javacrumbs.json-unit</groupId>
+			<artifactId>json-unit-fluent</artifactId>
+			<version>${jsonunit.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 </project>
